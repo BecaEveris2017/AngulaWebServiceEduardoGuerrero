@@ -1,0 +1,14 @@
+
+<div>
+    <h3>Post</h3>
+    <button (click)="funcion_mostrar()"name="btn_list" >{{showCont ? 'ocultar':'mostrar' }}</button>
+    <div *ngIf="showCont">
+        <div *ngFor = "let post of posts">
+            <h1>{{post.userID}}</h1>
+            <h2>{{post.id}}</h2>
+            <h2>{{post.title}}</h2>
+            <p> {{post.body}}</p>
+        
+          </div>
+    </div>
+</div>
